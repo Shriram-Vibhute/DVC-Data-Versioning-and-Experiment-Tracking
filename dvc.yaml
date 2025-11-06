@@ -47,6 +47,7 @@ stages:
     - models/models/bagging_classifier.joblib
     - data/features/test.csv
 
+# Generated automatically by DVC only when you are tracking the experiments using dvclive.
 artifacts:
   BaggingClassifier:
     path: models/models/bagging_classifier.joblib
