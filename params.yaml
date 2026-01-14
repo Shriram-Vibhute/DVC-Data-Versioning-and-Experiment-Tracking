@@ -14,15 +14,14 @@ model_training:
     min_samples_leaf: 5
     max_features: "sqrt"
     random_state: 42
-  
+
   bagging:
     n_estimators: 50
     max_samples: 0.75
     max_features: 0.75
     bootstrap: False
-    bootstrap_features: False 
+    bootstrap_features: False
     oob_score: False
     warm_start: False
     random_state: 42
     verbose: 1
-
