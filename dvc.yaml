@@ -46,18 +46,7 @@ stages:
     deps:
     - models/models/bagging_classifier.joblib
     - data/features/test.csv
-
 # Generated automatically by DVC only when you are tracking the experiments using dvclive.
-artifacts:
-  BaggingClassifier:
-    path: models/models/bagging_classifier.joblib
-    type: model
-  train_dataset:
-    path: data/features/train.csv
-    type: dataset
-  test_dataset:
-    path: data/features/test.csv
-    type: dataset
 params:
 - dvclive/params.yaml
 metrics:
@@ -79,3 +68,13 @@ plots:
     title: Precision-Recall Curve
     x_label: Recall
     y_label: Precision
+artifacts:
+  train_dataset:
+    path: data/features/train.csv
+    type: dataset
+  test_dataset:
+    path: data/features/test.csv
+    type: dataset
+  BaggingClassifier:
+    path: models/models/bagging_classifier.joblib
+    type: model

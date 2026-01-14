@@ -1,4 +1,4 @@
 [core]
     remote = myremote
-['remote "myremote"']
-    url = ../%TEMP%
+[remote "myremote"]
+    url = ../temp
